@@ -29,6 +29,8 @@
 
 ## 其他
 * 如果您的构建和运行过程比较难以理解的话，建议您修改 Readme 的这个地方添加一些说明文字。
+
+
 * 该项目是在MyEclipse下的maven项目，并且内嵌了jetty 可直接运行jar 
 * 直接在jvmdemo根目录下 mvn package 大包jar  执行jar即可。
 * 测试：curl 添加数据测试 curl "localhost:7777/create?state=success&type=chongzhi&price=100&currencyType=USD&uname=hdq" -Fa=a -i
