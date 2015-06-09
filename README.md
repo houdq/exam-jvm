@@ -29,3 +29,10 @@
 
 ## 其他
 * 如果您的构建和运行过程比较难以理解的话，建议您修改 Readme 的这个地方添加一些说明文字。
+* 该项目是在MyEclipse下的maven项目，并且内嵌了jetty 可直接运行jar 
+* 直接在jvmdemo根目录下 mvn package 大包jar  执行jar即可。
+* 测试：curl 添加数据测试 curl "localhost:7777/create?state=success&type=chongzhi&price=100&currencyType=USD&uname=hdq" -Fa=a -i
+* 若没有curl post过去数据就可以 url:localhost:7777/create 数据格式：{"state":"success","type":"chongzhi","price":"100","currencyType":"USD","user":{"uname":"hdq"}}
+* id暂时用uname进行MD5生成
+* 数据存储采用内存方式
+* 测试地址 http://localhost:7777/query 和创建接口无异常  按状态查http://localhost:7777/query?state=success 有点问题 可能写的时候有点草，有点小问题，两个循环出点问题 睁不开眼了 改天再看吧。。
