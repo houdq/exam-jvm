@@ -8,6 +8,8 @@ import java.util.logging.Logger;
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.Servlet;
 
+import hdq.rest.jvm.service.Create;
+import hdq.rest.jvm.service.Query;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;

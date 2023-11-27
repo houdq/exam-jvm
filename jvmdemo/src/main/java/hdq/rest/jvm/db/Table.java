@@ -1,4 +1,4 @@
-package hdq.rest.jvm;
+package hdq.rest.jvm.db;
 
 import java.util.ArrayList;
 import java.util.HashMap;

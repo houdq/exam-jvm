@@ -1,4 +1,6 @@
-package hdq.rest.jvm;
+package hdq.rest.jvm.db;
+
+import hdq.rest.jvm.service.QueryManager;
 
 import java.util.HashMap;
 
@@ -13,7 +15,7 @@ public class DB {
 
 	private DB() {
 	}
-
+	// 懒汉模式单例
 	public static DB getInstance() {
 		if (db == null) {
 			db = new DB();
@@ -21,6 +23,7 @@ public class DB {
 		return db;
 	}
 
+	// 创建表
 	public Table createTable(String tname) {
 		if (tableCache.get(tname) != null) {
 			return tableCache.get(tname);

@@ -1,4 +1,4 @@
-package hdq.rest.jvm;
+package hdq.rest.jvm.service;
 
 public class Msg {
 	private boolean suc = false;
