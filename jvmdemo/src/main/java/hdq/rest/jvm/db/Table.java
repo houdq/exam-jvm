@@ -31,7 +31,7 @@ public class Table {
 		System.out.println(state);
 		ArrayList<Element> result = new ArrayList<Element>();
 		for (Element e : this.elements) {
-			if (e.getState() == state) {
+			if (e.getState().equals(state)) {
 				result.add(e);
 			}
 		}
